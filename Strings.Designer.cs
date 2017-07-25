@@ -79,7 +79,7 @@ namespace Zummer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hi! What would you like to read about? I can fetch you the best Wikipedia results on any subject..
+        ///   Looks up a localized string similar to Hi! What would you like to read about?.
         /// </summary>
         internal static string GreetOnDemand {
             get {
@@ -93,6 +93,15 @@ namespace Zummer {
         internal static string MoreOnBing {
             get {
                 return ResourceManager.GetString("MoreOnBing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your next class is at noon..
+        /// </summary>
+        internal static string NextClass {
+            get {
+                return ResourceManager.GetString("NextClass", resourceCulture);
             }
         }
         

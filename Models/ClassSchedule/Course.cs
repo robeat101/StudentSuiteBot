@@ -18,12 +18,18 @@ namespace Zummer.Models.ClassSchedule
             List<string> location = new List<string>();
             location.Add("Buffalo");
             location.Add("Worcester");
+            List<string> subjects = new List<string>();
+            for (int i = 0; i < 10; ++i)
+            {
+                subjects.Add("Macro Theory Lecture " + (i+1).ToString());
+            }
+                
             Topic = "Macro-Economic Theory for Noobs";
             Professor = "Dr. Hiroshi Ishiguro";
             Schedule = new List<PeriodDetail>();
             for(int i = 0; i < 10; ++i)
             {
-                Schedule.Add(new PeriodDetail(start, start.AddHours(1), location[i % 2], location[i % 2] + " Economics"));
+                Schedule.Add(new PeriodDetail(start.AddDays(i), start.AddHours(1).AddDays(i), location[i % 2], subjects[i]));
             }
         }
 

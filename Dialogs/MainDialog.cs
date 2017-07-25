@@ -45,6 +45,13 @@ namespace Zummer.Dialogs
             context.Wait(this.MessageReceived);
         }
 
+        [LuisIntent(ZummerStrings.NextClassIntentName)]
+        public async Task NextClassIntentName(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
+        {
+            await this.handlerFactory.CreateIntentHandler(ZummerStrings.NextClassIntentName).Respond(activity, result);
+            context.Wait(this.MessageReceived);
+        }
+
         [LuisIntent("")]
         [LuisIntent("None")]
         public async Task FallbackIntentHandlerAsync(IDialogContext context, LuisResult result)

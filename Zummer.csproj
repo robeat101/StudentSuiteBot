@@ -136,6 +136,7 @@
     <Compile Include="Models\ClassSchedule\PeriodDetail.cs" />
     <Compile Include="Models\Search\BingSearch.cs" />
     <Compile Include="Models\Search\ZummerSearchResult.cs" />
+    <Compile Include="Handlers\NextClassIntentHandler.cs" />
     <Compile Include="Services\IApiHandler.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Services\ApiHandler.cs" />

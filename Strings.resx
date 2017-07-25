@@ -124,7 +124,7 @@
     <value>Hmm... I did not understand that. Rephrase your message and try again.</value>
   </data>
   <data name="GreetOnDemand" xml:space="preserve">
-    <value>Hi! What would you like to read about? I can fetch you the best Wikipedia results on any subject.</value>
+    <value>Hi! What would you like to read about?</value>
   </data>
   <data name="SearchTopicTypeMessage" xml:space="preserve">
     <value>Here you go.</value>
@@ -134,5 +134,8 @@
   </data>
   <data name="ClassSchedule" xml:space="preserve">
     <value>Classes are on Tuesdays and Thursdays from 1:30 pm to 2:30 pm in AK 112. </value>
+  </data>
+  <data name="NextClass" xml:space="preserve">
+    <value>Your next class is at noon.</value>
   </data>
 </root>

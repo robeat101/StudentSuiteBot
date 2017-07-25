@@ -23,11 +23,17 @@ namespace Zummer.Handlers
         public async Task Respond(IAwaitable<IMessageActivity> activity, LuisResult result)
         {
             var testCourse = new Course();
-            var serializer = new Serializer();
-            var stringBuilder = new StringBuilder(); 
-            var testStringWriter = new StringWriter(stringBuilder);
-            serializer.Serialize(testStringWriter, testCourse);
-            await this.botToUser.PostAsync(stringBuilder.ToString());
+            string output = "";
+            output += "### " + testCourse.Topic + "\n";
+            output += "#### Professor: " + testCourse.Professor + "\n";
+            output += "#### Schedule: " + "\n";
+            foreach (PeriodDetail periodDetail in testCourse.Schedule)
+            {
+                output += "* Lecture on " + periodDetail.LectureTopic + "\n";
+                output += "    * Location: " + periodDetail.Location + "\n";
+                output += "    * Time: " + periodDetail.Start.ToShortDateString() + " " + periodDetail.Start.ToShortTimeString() + " to " + periodDetail.End.ToShortTimeString() + "\n";
+            }
+            await this.botToUser.PostAsync(output);
         }
     }
 }

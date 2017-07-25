@@ -7,7 +7,7 @@
         public const string ClassScheduleIntentName = "ClassSchedule"; 
 
         public const string GreetingIntentName = "Greeting";
-
         public const string NoneIntentName = "None";
+        public const string NextClassIntentName = "NextClass";
     }
 }
