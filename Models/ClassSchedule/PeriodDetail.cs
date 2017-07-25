@@ -7,10 +7,10 @@ namespace Zummer.Models.ClassSchedule
 {
     public class PeriodDetail
     {
-        DateTime Start { get; set; }
-        DateTime End { get; set; }
-        string Location { get; set; }
-        string LectureTopic { get; set; }
+        public DateTime Start { get; set; }
+        public DateTime End { get; set; }
+        public string Location { get; set; }
+        public string LectureTopic { get; set; }
 
         public PeriodDetail(DateTime Start, DateTime End, string Location, string LectureTopic)
         {

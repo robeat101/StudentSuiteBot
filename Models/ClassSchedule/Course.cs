@@ -8,9 +8,9 @@ namespace Zummer.Models.ClassSchedule
 {
     public class Course
     {
-        string Topic { get; set; }
-        string Professor { get; set; }
-        List<PeriodDetail> Schedule { get; set; } 
+        public string Topic { get; set; }
+        public string Professor { get; set; }
+        public List<PeriodDetail> Schedule { get; set; } 
 
         public Course()
         {

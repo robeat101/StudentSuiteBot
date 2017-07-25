@@ -27,7 +27,7 @@ namespace Zummer.Handlers
             var stringBuilder = new StringBuilder(); 
             var testStringWriter = new StringWriter(stringBuilder);
             serializer.Serialize(testStringWriter, testCourse);
-            await this.botToUser.PostAsync("```" + stringBuilder.ToString() + "```");
+            await this.botToUser.PostAsync(stringBuilder.ToString());
         }
     }
 }
