@@ -116,6 +116,9 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="YamlDotNet, Version=4.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\YamlDotNet.4.2.1\lib\net35\YamlDotNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.htm" />
@@ -129,6 +132,8 @@
     <Compile Include="Handlers\ClassScheduleIntentHandler.cs" />
     <Compile Include="Handlers\HandlerFactory.cs" />
     <Compile Include="Handlers\ZummerStrings.cs" />
+    <Compile Include="Models\ClassSchedule\Course.cs" />
+    <Compile Include="Models\ClassSchedule\PeriodDetail.cs" />
     <Compile Include="Models\Search\BingSearch.cs" />
     <Compile Include="Models\Search\ZummerSearchResult.cs" />
     <Compile Include="Services\IApiHandler.cs" />
