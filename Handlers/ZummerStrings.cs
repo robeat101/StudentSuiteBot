@@ -4,6 +4,7 @@
     {
         public const string SearchIntentName = "Search";
         public const string ArticlesEntityTopic = "ArticleTopic";
+        public const string ClassScheduleIntentName = "ClassSchedule"; 
 
         public const string GreetingIntentName = "Greeting";
 

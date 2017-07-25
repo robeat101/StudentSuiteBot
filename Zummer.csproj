@@ -126,12 +126,15 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="web.SECRETS.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handlers\ClassScheduleIntentHandler.cs" />
     <Compile Include="Handlers\HandlerFactory.cs" />
     <Compile Include="Handlers\ZummerStrings.cs" />
     <Compile Include="Models\Search\BingSearch.cs" />
     <Compile Include="Models\Search\ZummerSearchResult.cs" />
+    <Compile Include="Modules\APIKeyStore.cs" />
     <Compile Include="Services\IApiHandler.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Services\ApiHandler.cs" />

@@ -61,6 +61,15 @@ namespace Zummer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Classes are on Tuesdays and Thursdays from 1:30 pm to 2:30 pm in AK 112. .
+        /// </summary>
+        internal static string ClassSchedule {
+            get {
+                return ResourceManager.GetString("ClassSchedule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hmm... I did not understand that. Rephrase your message and try again..
         /// </summary>
         internal static string FallbackIntentMessage {

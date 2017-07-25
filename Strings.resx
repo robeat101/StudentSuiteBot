@@ -132,4 +132,7 @@
   <data name="MoreOnBing" xml:space="preserve">
     <value>More on Bing</value>
   </data>
+  <data name="ClassSchedule" xml:space="preserve">
+    <value>Classes are on Tuesdays and Thursdays from 1:30 pm to 2:30 pm in AK 112. </value>
+  </data>
 </root>
